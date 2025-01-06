@@ -417,7 +417,7 @@ export type ContractCallOptions = {
    * transfered assets */
   postConditionMode?: PostConditionModeName | PostConditionMode;
   /** a list of post conditions to add to the transaction */
-  postConditions?: PostCondition[];
+  postConditions?: PostCondition[] | PostConditionWire[];
   /** set to true to validate that the supplied function args match those specified in
    * the published contract */
   validateWithAbi?: boolean | ClarityAbi;
